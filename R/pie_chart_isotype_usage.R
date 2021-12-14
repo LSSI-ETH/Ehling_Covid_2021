@@ -1,17 +1,17 @@
 #' Sideways barplot
 #' @param list_repertoires Patient Metadata.
-#' @param order_ids Path to which figures should be saved.
-#' @param chain Path to which figures should be saved.
-#' @param sample_name Path to which figures should be saved.
-#' @param text_size Path to which figures should be saved.
-#' @param width_height Path to which figures should be saved.
+#' @param chain Heavy or Light chain
+#' @param order_ids order in which pie charts should be shown
+#' @param sample_name ID for plot name
+#' @param text_size Size of text of pie labels
+#' @param width_height width-height of full plot.
 #' @param plot_directory Path to which figures should be saved.
-#' @param color_scale_category Path to which figures should be saved.
+#' @param color_scale_category color scale.
 #' @return TRUE (plots saved as pdfs into path_figures)
 #' @examples
-#' pie_chart_isotype_usage(list_repertoires,order_ids,chain="H",sample_name)
+#' pie_chart_isotype_usage(list_repertoires,chain="H",order_ids,sample_name)
 
-pie_chart_isotype_usage<-function (list_repertoires, order_ids,chain = "H", sample_name, text_size = 5,
+pie_chart_isotype_usage<-function (list_repertoires,chain = "H", order_ids, sample_name, text_size = 5,
                               width_height = c(x = 15, y = 15), figure_path = "Ehling_figs",color_scale_category=c('#66c2a5','#fc8d62','#8da0cb','#e78ac3','#a6d854','#ffd92f'))
 {
   pie_chart_df_plot_list <- list()
