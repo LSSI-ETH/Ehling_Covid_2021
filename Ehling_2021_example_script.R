@@ -20,11 +20,6 @@ FIGURE_PATH<-"./figures"
 plot_patients(patients=patients_metadata,
   figure_path=FIGURE_PATH)
 
-###
-# Dotplots: OD ratio
-###
-
-
 
 
 
