@@ -6,8 +6,8 @@ Author: Roy Ehling [aut, cre], Cédric R. Weber [aut]
 Maintainer: Cédric R. Weber <cedric.weber@bsse.ethz.ch>
 Description: Compact code repository for publication "SARS-CoV-2 reactive and neutralizing antibodies discovered by single cell sequencing of plasma cells and mammalian display"
 Depends: R (>= 3.4.0)
-Imports: ggplot2, stringdist, Biostrings, igraph, stringr, data.table, plyr, reshape2,
-    grid, ggthemes, RColorBrewer
+Imports: ggplot2, stringdist, Biostrings, igraph, stringr, data.table, plyr,dplyr, reshape2,
+    grid, ggthemes, RColorBrewer, plotrix, ComplexHeatmap
 License: GPL-3
 Encoding: UTF-8
 LazyData: true

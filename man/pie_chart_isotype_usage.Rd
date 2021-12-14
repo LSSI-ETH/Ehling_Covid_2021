@@ -6,8 +6,8 @@
 \usage{
 pie_chart_isotype_usage(
   list_repertoires,
-  order_ids,
   chain = "H",
+  order_ids,
   sample_name,
   text_size = 5,
   width_height = c(x = 15, y = 15),
@@ -19,17 +19,17 @@ pie_chart_isotype_usage(
 \arguments{
 \item{list_repertoires}{Patient Metadata.}
 
-\item{order_ids}{Path to which figures should be saved.}
+\item{chain}{Heavy or Light chain}
 
-\item{chain}{Path to which figures should be saved.}
+\item{order_ids}{order in which pie charts should be shown}
 
-\item{sample_name}{Path to which figures should be saved.}
+\item{sample_name}{ID for plot name}
 
-\item{text_size}{Path to which figures should be saved.}
+\item{text_size}{Size of text of pie labels}
 
-\item{width_height}{Path to which figures should be saved.}
+\item{width_height}{width-height of full plot.}
 
-\item{color_scale_category}{Path to which figures should be saved.}
+\item{color_scale_category}{color scale.}
 
 \item{plot_directory}{Path to which figures should be saved.}
 }
@@ -40,5 +40,5 @@ TRUE (plots saved as pdfs into path_figures)
 Sideways barplot
 }
 \examples{
-pie_chart_isotype_usage(list_repertoires,order_ids,chain="H",sample_name)
+pie_chart_isotype_usage(list_repertoires,chain="H",order_ids,sample_name)
 }
